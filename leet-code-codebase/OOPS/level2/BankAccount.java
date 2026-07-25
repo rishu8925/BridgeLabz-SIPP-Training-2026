@@ -1,0 +1,38 @@
+class BankAccount {
+    String accountHolder;
+    int accountNumber;
+    double balance;
+
+    BankAccount(String accountHolder,
+                int accountNumber,
+                double balance) {
+        this.accountHolder = accountHolder;
+        this.accountNumber = accountNumber;
+        this.balance = balance;
+    }
+
+    void deposit(double amount) {
+        balance += amount;
+    }
+
+    void withdraw(double amount) {
+        if (amount <= balance) {
+            balance -= amount;
+        } else {
+            System.out.println("Insufficient Balance");
+        }
+    }
+
+    void displayBalance() {
+        System.out.println("Balance: " + balance);
+    }
+
+    public static void main(String[] args) {
+        BankAccount acc =
+                new BankAccount("Pragati", 12345, 10000);
+
+        acc.deposit(2000);
+        acc.withdraw(5000);
+        acc.displayBalance();
+    }
+}
