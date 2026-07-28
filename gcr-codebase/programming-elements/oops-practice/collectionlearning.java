@@ -74,7 +74,7 @@ public class collectionlearning {
     //during classloaded object creation se pehle hi memory locate ho jati h isilye static -class pr depend hoti h ,object pr nhi
     
 //--------------------------------------------------------------------------------
-    //Tterable(interface)->collection(interface)->1) list(interface)[Arraylist(class),linkedlist(class),vector,Stack(legacy classes)],2)Queue(interface),3)Set(interface)[Hashset(class),linkedlist(c),treeset(c)]
+    //Iterable(interface)->collection(interface)->1) list(interface)[Arraylist(class),linkedlist(class),vector,Stack(legacy classes)],2)Queue(interface),3)Set(interface)[Hashset(class),linkedlist(c),treeset(c)]
     //
     // legacy classes -> array k limitation ko overcome krne k liye use kiya tha
    //null value tree set m accept nhi hoti h or or hashset m hoti  
